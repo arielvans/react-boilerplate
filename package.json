@@ -1,12 +1,12 @@
 {
-  "name": "movies",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start-dev": "webpack-dev-server --mode development"
+    "build": "NODE_ENV=production webpack --mode production",
+    "start-dev": "NODE_ENV=development webpack-dev-server --mode development"
   },
   "keywords": [],
   "author": "Ariel Vainstein",

@@ -2,6 +2,7 @@
  * Module dependencies
  */
 import React from 'react';
+import './styles.scss';
 
 /**
  * UI Components
