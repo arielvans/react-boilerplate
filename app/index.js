@@ -8,22 +8,22 @@ import './styles.scss';
 /**
  * UI Components
  */
+import Navbar from './components/navbar';
 
 /**
  * View Component
  */
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
+class App extends React.Component {
 
   render() {
-   
+
     return (
+      <React.Fragment>
+        <Navbar />
         <Home />
+      </React.Fragment>
     );
   }
 }
+
+export default App;

@@ -7,23 +7,25 @@ import './styles.scss';
 /**
  * UI Components
  */
+import Combo from '../../components/combo';
 
 /**
  * View Component
  */
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
+class Home extends React.Component {
 
   render() {
-   
     return (
-        <div className='home'>HOLA MUNDO!</div>
+      <React.Fragment>
+        <div className="home-container">
+          <div className="home-container__background">
+            <Combo />
+          </div>
+        </div>
+      </React.Fragment >
     );
   }
 }
+
+export default Home;
 
